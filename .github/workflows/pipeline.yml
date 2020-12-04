@@ -15,8 +15,8 @@ jobs:
       - run: npm test
       - run: npm run build
       - name: Deploy
-          uses: peaceiris/actions-gh-pages@v3
-          with:
-            deploy_key: ${{ secrets.ACTIONS_TOKEN }}
-            external_repository: MrEcko/ghactions-deployment
-            publish_dir: ./pub
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          deploy_key: ${{ secrets.ACTIONS_TOKEN }}
+          external_repository: MrEcko/ghactions-deployment
+          publish_dir: ./pub
