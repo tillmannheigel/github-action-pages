@@ -1,0 +1,16 @@
+{
+  "name": "try",
+  "version": "1.0.0",
+  "description": "hello",
+  "main": "index.html",
+  "scripts": {
+    "build": "npm run minify",
+    "minify": "html-minifier --collapse-whitespace --remove-comments --remove-optional-tags --remove-redundant-attributes --remove-script-type-attributes --remove-tag-whitespace --output-dir pub --input-dir src",
+    "test": "echo \"no test specified\""
+  },
+  "author": "",
+  "dependencies": {
+    "html-minifier": "^4.0.0"
+  },
+  "license": "ISC"
+}
